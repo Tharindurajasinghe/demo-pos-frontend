@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { getBillHTML } from '../components/BillView';
 import api from '../services/api';
 import UptoNowBox from './UptoNowBox';
+import LowStockAlert from './LowStockAlert';
 
 const SellingScreen = ({ onEndDay }) => {
   const [cart, setCart] = useState([]);
@@ -225,6 +226,8 @@ const SellingScreen = ({ onEndDay }) => {
           </div>
         </div>
 
+  
+
         <div className="bg-white p-6 rounded-lg shadow">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-xl font-bold">Current Bill</h2>
@@ -324,6 +327,9 @@ const SellingScreen = ({ onEndDay }) => {
           )}
         </div>
       </div>
+      <div className="mb-6">
+  <LowStockAlert />
+</div>
 
       <UptoNowBox show={showBills} bills={todayBills} onClose={() => setShowBills(false)} />
     </div>
