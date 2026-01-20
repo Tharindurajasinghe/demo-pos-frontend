@@ -9,7 +9,8 @@ const Navbar = ({ activeScreen, setActiveScreen, onLogout }) => {
     { id: 'selling', label: 'Start Today', icon: '🛒' },
     { id: 'store', label: 'Store', icon: '📦' },
     { id: 'summary', label: 'Summary', icon: '📊' },
-    { id: 'checkbill', label: 'Check Bill', icon: '🧾' }
+    { id: 'checkbill', label: 'Check Bill', icon: '🧾' },
+    { id: 'chequedetails', label: 'Cheque Details', icon: '💳' }
   ];
 
   const handleNavClick = (screenId) => {

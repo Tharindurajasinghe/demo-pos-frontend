@@ -77,6 +77,21 @@ addCategory: (category) => axiosInstance.post('/categories', category),
 updateCategory: (id, category) => axiosInstance.put(`/categories/${id}`, category),
 deleteCategory: (id) => axiosInstance.delete(`/categories/${id}`),
 getCategoryProducts: (id) => axiosInstance.get(`/categories/${id}/products`),
+
+// Invoices
+getInvoices: () => axiosInstance.get('/invoices'),
+getInvoice: (invoiceNumber) => axiosInstance.get(`/invoices/${invoiceNumber}`),
+addInvoice: (invoice) => axiosInstance.post('/invoices', invoice),
+updateInvoice: (invoiceNumber, invoice) => axiosInstance.put(`/invoices/${invoiceNumber}`, invoice),
+deleteInvoice: (invoiceNumber) => axiosInstance.delete(`/invoices/${invoiceNumber}`),
+
+// Cheques
+getCheques: () => axiosInstance.get('/cheques'),
+getCheque: (id) => axiosInstance.get(`/cheques/${id}`),
+getChequesByInvoice: (invoiceNumber) => axiosInstance.get(`/cheques/invoice/${invoiceNumber}`),
+addCheque: (cheque) => axiosInstance.post('/cheques', cheque),
+updateCheque: (id, cheque) => axiosInstance.put(`/cheques/${id}`, cheque),
+deleteCheque: (id) => axiosInstance.delete(`/cheques/${id}`),
 };
 
 export default api;

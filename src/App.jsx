@@ -6,6 +6,7 @@ import StoreManagement from './components/StoreManagement';
 import Summary from './components/Summary';
 import CheckBill from './components/CheckBill';
 import DayEndSummary from './components/DayEndSummary';
+import ChequeDetails from './components/ChequeDetails';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -54,6 +55,7 @@ function App() {
         {activeScreen === 'summary' && <Summary />}
         {activeScreen === 'checkbill' && <CheckBill />}
         {activeScreen === 'dayend' && <DayEndSummary data={dayEndData} onLogout={handleLogout} />}
+        {activeScreen === 'chequedetails' && <ChequeDetails />}
       </div>
     </div>
   );
