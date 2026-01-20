@@ -34,9 +34,9 @@ export const getBillHTML = (bill) => {
     </head>
     <body>
       <div class="header">
-        <h2>Jagath Store</h2>
-        <p>Pasal Mawatha, Okkampitiya</p>
-        <p>Tel: 0713364743</p>
+        <h2>DEMO Store</h2>
+        <p>Store Address</p>
+        <p>Tel: 0710000000</p>
       </div>
 
       <p><b>Bill ID – ${bill.billId}</b></p>
@@ -71,7 +71,6 @@ export const getBillHTML = (bill) => {
       <p><b>Change: ${bill.change.toFixed(2)}/=</b></p>
 
       <div class="sinhala-note">
-        <p>යොගට්/ අයිස්ක්‍රීම් නෑවත භාරගනු නොලෑබේ.</b></p>
         <p>ඉල්ලුම් කර ඈති භාණ්ඩ රෑගෙන </b>></p>
         <p>බිල රෑගෙන ඒම අනිවාර්ය වේ.</b></p>
       </div>
