@@ -224,7 +224,7 @@ const ChequeDetails = () => {
 
   <div className="overflow-x-auto">
     {/* Added max-height and overflow-y-auto */}
-    <div className="max-h-[500px] overflow-y-auto">
+    <div className="max-h-[400px] overflow-y-auto">
       <table className="w-full">
         <thead className="bg-gray-100 sticky top-0">
           <tr>
